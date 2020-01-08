@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package grpcDemo;
+
+message MapObject {
+    map<string, string> mapObj = 1;
+}
+
+message MapRequest {
+    map<string, MapObject> map = 1;
+}
+
+
+message MapResponse {
+    string resp = 1;
+}
+
+service GreeterMap {
+    rpc SayHello (MapRequest) returns (MapResponse);
+}
