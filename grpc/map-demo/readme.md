@@ -1,4 +1,7 @@
 # 说明
+安装
+python -m pip install grpcio -i https://mirrors.aliyun.com/pypi/simple/
+python -m pip install grpcio-tools -i https://mirrors.aliyun.com/pypi/simple/
 
 ## proto文件编译
 ```python
